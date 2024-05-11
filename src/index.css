@@ -1,0 +1,67 @@
+
+@import './tailwind.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scrollme {
+  overflow:auto;
+   min-width:100px;
+
+   
+}
+
+.scrollme::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.scrollme::-webkit-scrollbar-track {
+  background: rgb(239, 239, 239);        /* color of the tracking area */
+}
+
+.scrollme::-webkit-scrollbar-thumb {
+  background-color:rgb(197, 195, 195) ;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(239, 239, 239);  /* creates padding around scroll thumb */
+}
+
+.Swrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.item {
+  height: 300px;
+  width: 200px;
+  background: grey;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+}
+
+.App {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.active{
+  background-color: black !important;
+  color: white !important;
+  border-radius: 0px !important;
+}
+
+.tab-content > .active{
+  background-color: rgb(237, 237, 237) !important;
+  color: black !important;
+  border-radius: 0px !important;
+}
